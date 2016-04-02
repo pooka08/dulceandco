@@ -295,17 +295,17 @@ h2.upper {
 }
 .block:last-child {padding-bottom:0;
 }
-.block ul, .follow_us ul, #footer ul {
+.block ul, .follow_us ul {
 	padding:0;
 	margin:0;
 	list-style:none;
 }
-.block li, #footer li {
+.block li {
 	padding:0;
 	margin:0;
 }
 
-.footer {
+#footer {
     border-top:5px palegoldenrod solid;
 }
 .copyright {
