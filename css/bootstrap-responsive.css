@@ -1095,8 +1095,8 @@
 /* For devices 400px and larger: */
 @media (min-width: 400px) {
     .img_thumbnail {
-        width: 30%;
-        height: 30%;
+        width: 360px;
+        height: 180px;
         padding-top: 3px;
         padding-left: 30px;
     }
