@@ -97,6 +97,7 @@ hr.soften {
   background: -o-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* Opera 11.10+ */
   background: -ms-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* IE10+ */
   background: linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
      -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
           box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
@@ -223,8 +224,8 @@ hr.soften {
   display: inline-block;
   padding: 5px 8px;
   line-height: 1;
-  display: inline;
-  zoom: 1;
+  *display: inline;
+  *zoom: 1;
 }
 
 /* Subhead (other pages)
@@ -543,7 +544,7 @@ h2 + .row {
   position: relative;
   margin: 15px 0;
   padding: 39px 19px 14px;
-  padding-top: 19px;
+  *padding-top: 19px;
   background-color: #fff;
   border: 1px solid #ddd;
   -webkit-border-radius: 4px;
@@ -748,7 +749,7 @@ form.bs-docs-example {
 }
 .bs-docs-sidenav > li > a {
   display: block;
-  width: 190px;
+  *width: 190px;
   margin: 0 0 -1px;
   padding: 8px 14px;
   border: 1px solid #e5e5e5;
