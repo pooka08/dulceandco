@@ -79,7 +79,7 @@
 		
 		thumbnails			: false,
 		
-		time				: 1500,	//milliseconds between the end of the sliding effect and the start of the nex one
+		time				: 1000,	//milliseconds between the end of the sliding effect and the start of the nex one
 		
 		transPeriod			: 1000,	//length of the sliding effect in milliseconds
 		
