@@ -11,12 +11,17 @@
 <link href="css/theme.css" rel="stylesheet">
 <link href="css/bootstrap-responsive.css" rel="stylesheet">
 <link href="css/docs.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
 <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
 <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->    
+<![endif]-->
+
+<style>
+</style>
+
 </head>
 <body>
 	<!--header-->
@@ -26,7 +31,7 @@
             	<div class="container">
                     <div class="row">
                         <div class="span4">
-                        	<div class="logo"><a href="index.html"><img src="img/logo.png" alt="" /></a></div>                        
+                        	<div class="logo"><a href="index.html"><img src="img/logo.png" alt="" /></a></div>
                         </div>
                         <div class="span8">
                         	<div class="follow_us">
@@ -69,7 +74,37 @@
             <div class="container inner_content">
                 <div class="row">
                     <!-- portfolio_block -->
-                    <div class="projects">
+                    <div id="lightgallery">
+                        <a href="img/gallery/1.jpg">
+                            <img class="img_thumbnail" src="img/gallery/1.jpg"/>
+                        </a>
+                        <a href="img/gallery/2.jpg">
+                            <img class="img_thumbnail" src="img/gallery/2.jpg"/>
+                        </a>
+                        <a href="img/gallery/3.jpg">
+                            <img class="img_thumbnail" src="img/gallery/3.jpg"/>
+                        </a>
+                        <a href="img/gallery/4.jpg">
+                            <img class="img_thumbnail" src="img/gallery/4.jpg"/>
+                        </a>
+                        <a href="img/gallery/5.jpg">
+                            <img class="img_thumbnail" src="img/gallery/5.jpg"/>
+                        </a>
+                        <a href="img/gallery/6.jpg">
+                            <img class="img_thumbnail" src="img/gallery/6.jpg"/>
+                        </a>
+                        <a href="img/gallery/7.jpg">
+                            <img class="img_thumbnail" src="img/gallery/7.jpg"/>
+                        </a>
+                        <a href="img/gallery/8.jpg">
+                            <img class="img_thumbnail" src="img/gallery/8.jpg"/>
+                        </a>
+                        <a href="img/gallery/9.jpg">
+                            <img class="img_thumbnail" src="img/gallery/9.jpg"/>
+                        </a>
+                    </div>
+
+                    <!--div class="projects">
                         <div class="span4 element">
                             <div class="hover_img">
                                 <img src="img/gallery/1.jpg" alt="" />
@@ -90,33 +125,8 @@
                                 <img src="img/gallery/4.jpg" alt="" />
                             </div>
                         </div>
-                        <div class="span4 element">
-                            <div class="hover_img">
-                                <img src="img/gallery/5.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="span4 element">
-                            <div class="hover_img">
-                                <img src="img/gallery/6.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="span4 element">
-                            <div class="hover_img">
-                                <img src="img/gallery/7.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="span4 element">
-                            <div class="hover_img">
-                                <img src="img/gallery/8.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="span4 element">
-                            <div class="hover_img">
-                                <img src="img/gallery/9.jpg" alt="" />
-                            </div>
-                        </div>
                         <div class="clear"></div>
-                    </div>   
+                    </div-->
                     <!-- //portfolio_block -->
                 </div>
             </div>
@@ -139,13 +149,23 @@
     <script type="text/javascript" src="js/jquery.preloader.js"></script>
     <script type="text/javascript" src="js/jquery.tweet.js"></script>
     <script type="text/javascript" src="js/myscript.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="js/lightgallery.js"></script>
+    <script src="js/lg-thumbnail.js"></script>
+    <script src="js/lg-fullscreen.js"></script>
+
     <script type="text/javascript">
-		$(document).ready(function(){	
-			//prettyPhoto
-			$("a[rel^='prettyPhoto']").prettyPhoto();
+		$(document).ready(function(){
+
+            $("#lightgallery").lightGallery();
+            $("#lightgallery2").lightGallery();
+
+            //prettyPhoto
+			//$("a[rel^='prettyPhoto']").prettyPhoto();
 			
 			//Image hover
-			$(".hover_img").live('mouseover',function(){
+			/*$(".hover_img").live('mouseover',function(){
 					var info=$(this).find("img");
 					info.stop().animate({opacity:0.6},500);
 					$(".preloader").css({'background':'none'});
@@ -156,7 +176,8 @@
 					info.stop().animate({opacity:1},500);
 					$(".preloader").css({'background':'none'});
 				}
-			);	
+			);*/
+
 			// Preloader
 			$(".projects .element").preloader();	
 							
