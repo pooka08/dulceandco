@@ -309,49 +309,9 @@ h2.upper {
     border-top:5px palegoldenrod solid;
 }
 .copyright {
-    color:gray;
-}
-
-.foot_right_block {
-	text-align:right;
-	padding-top:15px;
-}
-.foot_right_block .fright {margin-left:20px;
-}
-
-.inp_search {
-	font-family:Arial;
-	font-size:12px;
-	color:#1e1e1e !important;
-	background:#393939 !important;
-	width:200px;
-	height:17px;
-	padding:5px 9px;
-	border:1px #393939 solid !important;
-	margin:0 0 10px 0;
-}
-
-.foot_menu {text-align:right;
-}
-.foot_menu li {
-	display:inline-block;
-	padding:0 16px 0  0!important;
-	border:0 !important;
-	margin:0 !important;
-}
-.foot_menu li:last-child {padding:0 !important;
-}
-.foot_menu li a {
-	text-transform:uppercase;
-	color:#444444 !important;
-	font-size:14px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight:800;
-	font-style:normal !important;
-}
-.foot_menu li a:hover, .foot_menu li a.current {
-	color:#5f5f5f !important;
-	text-decoration:none;
+    color:lightgrey;
+    font-family:Arial;
+    font-size:10px;
 }
 
 .breadcrumb {
