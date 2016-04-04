@@ -601,8 +601,8 @@ ul.tweets li {
     border:0 !important;
 }
 #footer .follow_us a {
-    background-image:url(../img/foot_socials.png);
-    background-repeat:no-repeat;
+    /*background-image:url(../img/foot_socials.png);*/
+    /*background-repeat:no-repeat;*/
     height:18px;
     display:block;
     text-indent:-9999px;
