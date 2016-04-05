@@ -255,6 +255,16 @@ img {
     padding-bottom:8px;
     color:#313131;
 }
+.planning a span.link_title_small {
+    display:block;
+    line-height:20px;
+    font-size:16px;
+    text-transform:uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:700;
+    padding-bottom:8px;
+    color:#313131;
+}
 .planning a:hover {text-decoration:none;
 }
 
