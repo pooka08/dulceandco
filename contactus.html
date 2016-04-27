@@ -187,38 +187,9 @@
                     <div class="row">
                         <div class="span4">
                             <h2 class="title"><span>Send us a Message</span></h2>
-                            <!-- Contact Form -->
-                            <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-                            <form name="sentMessage" id="contactForm" novalidate>
-                                <div class="control-group form-group">
-                                    <div class="controls">
-                                        <label>Full Name:</label>
-                                        <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
-                                        <p class="help-block"></p>
-                                    </div>
-                                </div>
-                                <div class="control-group form-group">
-                                    <div class="controls">
-                                        <label>Phone Number:</label>
-                                        <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                    </div>
-                                </div>
-                                <div class="control-group form-group">
-                                    <div class="controls">
-                                        <label>Email Address:</label>
-                                        <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
-                                    </div>
-                                </div>
-                                <div class="control-group form-group">
-                                    <div class="controls">
-                                        <label>Message:</label>
-                                        <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
-                                    </div>
-                                </div>
-                                <div id="success"></div>
-                                <!-- For success/fail messages -->
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </form>
+
+                            <iframe id="JotFormIFrame" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://form.jotform.me/61169067601454" frameborder="0" style="width:100%; height:539px; border:none;" scrolling="no"> </iframe> <script type="text/javascript"> window.handleIFrameMessage = function(e) { var args = e.data.split(":"); var iframe = document.getElementById("JotFormIFrame"); if (!iframe) return; switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } if(window.location.href && window.location.href.indexOf("?") > -1) { var ifr = document.getElementById("JotFormIFrame"); var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } } </script>
+
                         </div>
                         <div class="span4">
                             <h2 class="title"><span>Contact Us</span></h2>
@@ -283,11 +254,6 @@
     <script type="text/javascript" src="js/jquery.tweet.js"></script>
     <script type="text/javascript" src="js/myscript.js"></script>
     <script src="js/application.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
 
 </body>
 </html>
