@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Dulce & Co. | Sweet Life. Sweet Memories.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Karen Ann Kho">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <style>
+        .help-block {
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            color: #737373;
+        }
+
+        .has-success .help-block,
+        .has-success .control-label,
+        .has-success .radio,
+        .has-success .checkbox,
+        .has-success .radio-inline,
+        .has-success .checkbox-inline,
+        .has-success.radio label,
+        .has-success.checkbox label,
+        .has-success.radio-inline label,
+        .has-success.checkbox-inline label {
+            color: #3c763d;
+        }
+        .has-warning .help-block,
+        .has-warning .control-label,
+        .has-warning .radio,
+        .has-warning .checkbox,
+        .has-warning .radio-inline,
+        .has-warning .checkbox-inline,
+        .has-warning.radio label,
+        .has-warning.checkbox label,
+        .has-warning.radio-inline label,
+        .has-warning.checkbox-inline label {
+            color: #8a6d3b;
+        }
+        .has-error .help-block,
+        .has-error .control-label,
+        .has-error .radio,
+        .has-error .checkbox,
+        .has-error .radio-inline,
+        .has-error .checkbox-inline,
+        .has-error.radio label,
+        .has-error.checkbox label,
+        .has-error.radio-inline label,
+        .has-error.checkbox-inline label {
+            color: #a94442;
+        }
+    </style>
+</head>
+<body>
+	<!--header-->
+    <div class="header">
+    	<div class="wrap">
+        	<div class="navbar navbar_ clearfix">
+            	<div class="container">
+                    <div class="row">
+                        <div class="span4">
+                        	<div class="logo"><a href="index.html"><img src="img/logo.png" alt="" /></a></div>
+                        </div>
+                        <div class="span8">
+                        	<div class="follow_us">
+                                <ul>
+                                    <li><a href="http://www.facebook.com/dulceandco.toronto" target="_blank" class="facebook">Facebook</a></li>
+                                    <li><a href="http://www.instagram.com/dulceandco" target="_blank" class="twitter">Twitter</a></li>
+                                    <li><a href="http://www.twitter.com/dulceandco" target="_blank" class="instagram">Instagram</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="my_menu">
+                                <ul class="mynav">
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li class="current"><a href="contactus.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <!--//header-->
+        
+    <!--page_container-->
+    <div class="page_container">
+    	<div class="breadcrumb">
+        	<div class="wrap">
+            	<div class="container">
+                    <a href="index.html">Home</a><span>/</span>Contact Us
+                </div>
+            </div>
+        </div>
+    	<div class="wrap">
+        	<div class="container">
+                <section>
+                    <div class="row">
+                        <div class="span4">
+                            <h2 class="title"><span>Send us a Message</span></h2>
+                            <!-- Contact Form -->
+                            <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+                            <form name="sentMessage" id="contactForm" novalidate>
+                                <div class="control-group form-group">
+                                    <div class="controls">
+                                        <label>Full Name:</label>
+                                        <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+                                <div class="control-group form-group">
+                                    <div class="controls">
+                                        <label>Phone Number:</label>
+                                        <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    </div>
+                                </div>
+                                <div class="control-group form-group">
+                                    <div class="controls">
+                                        <label>Email Address:</label>
+                                        <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                                    </div>
+                                </div>
+                                <div class="control-group form-group">
+                                    <div class="controls">
+                                        <label>Message:</label>
+                                        <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                                    </div>
+                                </div>
+                                <div id="success"></div>
+                                <!-- For success/fail messages -->
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                        <div class="span4">
+                            <h2 class="title"><span>Contact Us</span></h2>
+                            <b>Sherwin Ico</b><br/>
+                            Creative Director | DULCE&CO.<br/>
+                            Phone: + 1-647-929-7321 (Canada and U.S.A.)<br/>
+                            Phone: + 63-915-844-6509 (Philippines)<br/>
+                            Email: sherwin@dulceandco.com<br/>&nbsp;<br/>
+
+                            <b>Jorge Alava</b><br/>
+                            Event Stylist and Coordinator | DULCE&CO.<br/>
+                            Phone: + 63-915-953-2790 (Philippines)<br/>
+                            Email: jorge@dulceandco.com<br/>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!--//page_container-->
+
+    <!--footer-->
+    <div id="footer">
+        <div class="footer_bottom">
+            <div class="wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="span5">
+                            <div class="foot_logo"><a href="index.html"><img src="img/foot_logo.png" alt="" /></a></div>
+                            <div class="copyright">&copy; 2016 Dulce & Co. All Rights Reserved.</div>
+                        </div>
+                        <div class="span7">
+                            <div class="foot_right_block">
+                                <div class="clear"></div>
+                                <div class="foot_menu">
+                                    <span style="color: lightgrey">
+                                        Sherwin Ico<br/>
+                                        Creative Director | DULCE&CO.<br/>
+                                        Phone: + 1-647-929-7321 (Canada and U.S.A.)<br/>
+                                        Phone: + 63-915-844-6509 (Philippines)<br/>
+                                        Email: sherwin@dulceandco.com<br/><br/>
+                                        Jorge Alava<br/>
+                                        Event Stylist and Coordinator | DULCE&CO.<br/>
+                                        Phone: + 63-915-953-2790 (Philippines)<br/>
+                                        Email: jorge@dulceandco.com
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//footer-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/myscript.js"></script>
+    <script src="js/application.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+</body>
+</html>
